@@ -1,0 +1,18 @@
+Source: ansible-lxc
+Section: python
+Priority: optional
+Maintainer: Hiroaki Nakamura <hnakamur@gmail.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+Homepage: https://github.com/Mic92/ansible-lxc
+#Vcs-Git: git://git.debian.org/collab-maint/ansible-lxc.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/ansible-lxc.git;a=summary
+
+Package: ansible-lxc
+Section: python
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ansible (>= 2.0.0)
+Description: Ansible Connection Plugin to deploy to local
+ lxc containers (https://linuxcontainers.org/)
+ .
+ This version requires at least ansible 2.0.
